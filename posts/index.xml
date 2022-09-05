@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Tino Roivanen´s Homepage</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Tino Roivanen´s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome! Test Post!</title>
+      <link>/posts/my-first-post/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/my-first-post/</guid>
+      <description>This is a test post just to show that these blog-style posts actually work.</description>
+      <content>&lt;p&gt;This is a test post just to show that these blog-style posts actually work.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
