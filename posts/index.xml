@@ -8,13 +8,48 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Welcome! Test Post!</title>
+      <title>My first post! A writedown of how this page came to be.</title>
       <link>/posts/my-first-post/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>/posts/my-first-post/</guid>
-      <description>This is a test post just to show that these blog-style posts actually work.</description>
-      <content>&lt;p&gt;This is a test post just to show that these blog-style posts actually work.&lt;/p&gt;
+      <description>A short story on how i setup this website. I found this hugo theme after i got tired of my plain old website,and i wanted a challenge. So i started googling for some better solutions. Then i ended up on finding this framework for building websites called Hugo. and it looked robust enough, and easy enough to setup as a total newbie to webpage building. After looking around the hugo themes section, i found the perfect setup.</description>
+      <content>&lt;h1 id=&#34;a-short-story-on-how-i-setup-this-website&#34;&gt;A short story on how i setup this website.&lt;/h1&gt;
+&lt;p&gt;I found this hugo theme after i got tired of my plain old website,and i wanted a challenge. So i started googling for some better solutions.
+Then i ended up on finding this framework for building websites called &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo.&lt;/a&gt; and it looked robust enough,
+and easy enough to setup as a total newbie to webpage building. After looking around the hugo themes section, i found the perfect setup.
+A lovely theme called &lt;a href=&#34;https://github.com/panr/hugo-theme-terminal&#34;&gt;Terminal by panr&lt;/a&gt;, and it looked really nice to my eye. So i started on my journey
+to making my page with hugo. As in why this theme stood out to me, the pre-bundled themes did look really good in my eye. And hey, i love the color pink,
+but theres also more color options.&lt;/p&gt;
+&lt;p&gt;First thing that i needed to do, was to search for Hugo´s &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;Quick start guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The first thing that i did, was install hugo´s extended version. Using a packagemanager called &lt;a href=&#34;https://scoop.sh/&#34;&gt;Scoop&lt;/a&gt;, it was easy as typing&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;scoop install hugo-extended&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;into the command prompt after having installed scoop in the first place.&lt;/p&gt;
+&lt;p&gt;Then i generated a new site using&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo new site quickstart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And then i added the presupplied configuration file found on the github site of the terminal theme (linked above) with the terminal theme, into &lt;strong&gt;config.toml&lt;/strong&gt; file in the hugo root directory.&lt;/p&gt;
+&lt;p&gt;Then i added the first blogpost with using&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo new posts/file-name-here.md&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And editing the new file, that was generated in the posts folder. As the .md extension implies, the site uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;Markdown technology.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The markdown syntax is still something new that im learning. So these blog posts might look prettier, some day i hope.&lt;/p&gt;
+&lt;p&gt;at this point, i started the local envivorment by running&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo server -d&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;in the command prompt, while being in the server root folder.&lt;/p&gt;
+&lt;p&gt;That launched a local development server, that will autoupdate (a really nice feature.) into localhost:1313 by default.&lt;/p&gt;
+&lt;p&gt;Once i had done the changes i wanted, i navigated to the root folder, and specified where hugo will build the static pages, by using&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo -D folder/path/here&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And then i deployed this using the &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github pages&lt;/a&gt; tutorial.&lt;/p&gt;
+&lt;p&gt;Overall, this was a dive into something new, that i enjoyed doing.&lt;/p&gt;
 </content>
     </item>
     

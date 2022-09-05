@@ -101,7 +101,7 @@
         
       
         
-          <li><a href="/studydiary">Testing third page</a></li>
+          <li><a href="/studydiary">The Study Diary (Cloud Services Course)</a></li>
         
       
       
@@ -121,7 +121,7 @@
       
     
       
-        <li><a href="/studydiary">Testing third page</a></li>
+        <li><a href="/studydiary">The Study Diary (Cloud Services Course)</a></li>
       
     
     
@@ -151,7 +151,7 @@ Here youll find things related to me, things that ive done, places ive been to..
     
       <div class="post on-list">
         <h1 class="post-title">
-          <a href="/posts/my-first-post/">Welcome! Test Post!</a>
+          <a href="/posts/my-first-post/">My first post! A writedown of how this page came to be.</a>
         </h1>
         <div class="post-meta">
           <span class="post-date">
@@ -171,7 +171,42 @@ Here youll find things related to me, things that ive done, places ive been to..
 
         <div class="post-content">
           
-            <p>This is a test post just to show that these blog-style posts actually work.</p>
+            <h1 id="a-short-story-on-how-i-setup-this-website">A short story on how i setup this website.</h1>
+<p>I found this hugo theme after i got tired of my plain old website,and i wanted a challenge. So i started googling for some better solutions.
+Then i ended up on finding this framework for building websites called <a href="https://gohugo.io/">Hugo.</a> and it looked robust enough,
+and easy enough to setup as a total newbie to webpage building. After looking around the hugo themes section, i found the perfect setup.
+A lovely theme called <a href="https://github.com/panr/hugo-theme-terminal">Terminal by panr</a>, and it looked really nice to my eye. So i started on my journey
+to making my page with hugo. As in why this theme stood out to me, the pre-bundled themes did look really good in my eye. And hey, i love the color pink,
+but theres also more color options.</p>
+<p>First thing that i needed to do, was to search for Hugo´s <a href="https://gohugo.io/getting-started/quick-start/">Quick start guide</a>.</p>
+<p>The first thing that i did, was install hugo´s extended version. Using a packagemanager called <a href="https://scoop.sh/">Scoop</a>, it was easy as typing</p>
+<blockquote>
+<p>scoop install hugo-extended</p>
+</blockquote>
+<p>into the command prompt after having installed scoop in the first place.</p>
+<p>Then i generated a new site using</p>
+<blockquote>
+<p>hugo new site quickstart</p>
+</blockquote>
+<p>And then i added the presupplied configuration file found on the github site of the terminal theme (linked above) with the terminal theme, into <strong>config.toml</strong> file in the hugo root directory.</p>
+<p>Then i added the first blogpost with using</p>
+<blockquote>
+<p>hugo new posts/file-name-here.md</p>
+</blockquote>
+<p>And editing the new file, that was generated in the posts folder. As the .md extension implies, the site uses <a href="https://en.wikipedia.org/wiki/Markdown">Markdown technology.</a></p>
+<p>The markdown syntax is still something new that im learning. So these blog posts might look prettier, some day i hope.</p>
+<p>at this point, i started the local envivorment by running</p>
+<blockquote>
+<p>hugo server -d</p>
+</blockquote>
+<p>in the command prompt, while being in the server root folder.</p>
+<p>That launched a local development server, that will autoupdate (a really nice feature.) into localhost:1313 by default.</p>
+<p>Once i had done the changes i wanted, i navigated to the root folder, and specified where hugo will build the static pages, by using</p>
+<blockquote>
+<p>hugo -D folder/path/here</p>
+</blockquote>
+<p>And then i deployed this using the <a href="https://pages.github.com/">Github pages</a> tutorial.</p>
+<p>Overall, this was a dive into something new, that i enjoyed doing.</p>
 
           
         </div>
