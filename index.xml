@@ -8,21 +8,9 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a placeholder text. Text coming soon, once i finish translating the necossary things i want to add here.</description>
-      <content>&lt;h1 id=&#34;this-is-a-placeholder-text&#34;&gt;This is a placeholder text.&lt;/h1&gt;
-&lt;p&gt;Text coming soon, once i finish translating the necossary things i want to add here.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
       <title>The study diary!</title>
       <link>/studydiary/</link>
-      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>/studydiary/</guid>
       <description>Hi there! My name is Tino Roivanen, but online i like to go by multiple names, but most commonly Tinosaurus.
@@ -35,8 +23,9 @@ Please note; The marked date is the date that the page was last updated on.</des
 &lt;p&gt;This is my study diary post for the Cloud Services Course, that i am taking in the University Of Applied Sciences in Oulu.&lt;/p&gt;
 &lt;h1 id=&#34;please-note-the-marked-date-is-the-date-that-the-page-was-last-updated-on&#34;&gt;Please note; The marked date is the date that the page was last updated on.&lt;/h1&gt;
 &lt;p&gt;This page will be updated on an weekly basis, answering the questions detailed on the course.
-(By hosting this page on Github Pages, im sure this will be ample enough done for Free choice extra task bundle E)&lt;/p&gt;
-&lt;h1 id=&#34;week-1-questions-with-answers&#34;&gt;Week 1 questions with answers;&lt;/h1&gt;
+By hosting this page on Github Pages, im sure this will be ample enough done for Free choice extra task bundle E.
+Link to a post detailing how the page is setup can be found &lt;a href=&#34;https://tinosaurus.github.io/posts/my-first-post/&#34;&gt;Here.&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week-1&#34;&gt;Week 1;&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Describe with short examples: SaaS, PaaS and IaaS&lt;/p&gt;
 &lt;p&gt;SaaS, Or software as a Service is a model for software licensing that is served on a subscription basis, and is hosted for example, in the cloud.
@@ -72,17 +61,40 @@ it also has its troubles. Those including but not being limited to: data leak, s
 piece of software could cause your infrastructure to be compromised. But on the other hand, not practicing shadow IT is restricting
 employee freedom, due to the IT team not being aware of every possible application to ever exist. Its always a trade-off of security VS employee productivity.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h1 id=&#34;week-2&#34;&gt;Week 2;&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://tinosaurus.github.io/posts/second-post/&#34;&gt;I also did build a autonomous Weather Post upon connecting to my raspberry pi, that i published a seperate blog post of, to complete extra task bundle J, click here to access that blogpost.&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is &lt;em&gt;serverless architecture&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;It is an method of software designing that allows developers to build and run software without having to manage the infrastructure keeping it up. Developers can write and deploy code to any scale.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Describe shortly what is Kubernetes and what alternatives are there?&lt;/p&gt;
+&lt;p&gt;Kubernetes is a system for deployment, scaling, and management of application containers, also known as (CaaS) Container as a Service. Alternatives can include
+Azure Kubernetes Service, Google Cloud Run, AWS Fargate&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you would now use a virtualized Windows operating system in your laptop (whatever operating system the laptop already has): Which virtualization platform (VMware, Virtualbox, Hyper-V, KVM etc&amp;hellip;) would you use and why?&lt;/p&gt;
+&lt;p&gt;My choice would be Oracle VM VirtualBox, due to the fact that i have earlier experience with the software, so im already somewhat familiar with it. Also it is the best option
+for my use needs, being able to use multiple operating systems as host (windows, mac &amp;amp; linux), ease of use and being free.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;List some benefits of IaC (Infrastructure as Code) for modern software development&lt;/p&gt;
+&lt;p&gt;Its less risky making your infrastructure as code than having one person do them by hand, as if that person leaves, they could take all of the knowledge of the systems with them.
+Optimization also becomes very much easier when you can easier see what is causing troubles in your infrastructure, and you have better documentation with the code that has been developed by multiple people rather than
+having entire infrastructure managed by one person.&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
     </item>
     
     <item>
-      <title>Welcome! Test Post 2!</title>
-      <link>/second-blog-post/</link>
+      <title>About</title>
+      <link>/about/</link>
       <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/second-blog-post/</guid>
-      <description>This is a second test post.</description>
-      <content>&lt;p&gt;This is a second test post.&lt;/p&gt;
+      <guid>/about/</guid>
+      <description>This is a placeholder text. Text coming soon, once i finish translating the necossary things i want to add here.</description>
+      <content>&lt;h1 id=&#34;this-is-a-placeholder-text&#34;&gt;This is a placeholder text.&lt;/h1&gt;
+&lt;p&gt;Text coming soon, once i finish translating the necossary things i want to add here.&lt;/p&gt;
 </content>
     </item>
     
