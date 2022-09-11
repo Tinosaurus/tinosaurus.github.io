@@ -138,6 +138,70 @@
     
       <div class="post on-list">
         <h1 class="post-title">
+          <a href="/posts/second-post/">Second Post</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2022-09-11
+          </span>
+          
+            <span class="post-author">:: Tino Roivanen</span>
+          
+        </div>
+
+        
+
+        
+
+
+      
+        <div class="post-content">
+          
+            <h1 id="using-a-cloud-service-api-for-something-meanful">Using a cloud service API for something meanful.</h1>
+<p>This wasnt a big scale project by any means, but this is something that i found useful for myself. This project featured me
+using <a href="https://github.com/chubin/wttr.in">wttr.in</a> to check the weather with a console orientated service. I configured it to print out the local weather for the 3 following days, at 4 diffrent times (Morning, Noon, Evening and Night)</p>
+<p>Usage is simple(ish):</p>
+<p>Use either curl, on linux based systems, or Invoke-RestMethod in PowerShell on windows as a base for all the commands.</p>
+<p>Using</p>
+<blockquote>
+<p>curl <a href="https://wttr.in">https://wttr.in</a></p>
+</blockquote>
+<p>Will print the data based on your IP-Adresses geolocational data.</p>
+<p>But, what if you use a VPN for example, to mask your geolocational data?</p>
+<p>Well, no problem. You can add the desired url to the end of your location. For example;</p>
+<blockquote>
+<p>curl <a href="https://wttr.in/Helsinki">https://wttr.in/Helsinki</a></p>
+</blockquote>
+<p>It also works on other location types, such as:</p>
+<blockquote>
+<ul>
+<li>City Names</li>
+<li>Airport Codes</li>
+<li>Area Codes</li>
+<li>GPS Coordinates</li>
+</ul>
+</blockquote>
+<p>The returned calls are largely customizeable, with things such as:</p>
+<blockquote>
+<ul>
+<li>Weather Units</li>
+<li>Diffrent output formats (print a .png file for example)</li>
+<li>Print only one line of data</li>
+<li>Data-rich output format (Seems to have an limited amount of api calls)</li>
+<li>Moon phases and others, such as time of sunset and sunrise with a customizeable output.</li>
+</ul>
+</blockquote>
+<p>So for example: The custom Output i  made looks like this (I have scrapped the location, as this is going to be public on the internet afterall.);</p>
+<p><img src="https://i.imgur.com/ePd1nv0.png" alt="The ready console print"></p>
+
+          
+        </div>
+
+        
+      </div>
+    
+      <div class="post on-list">
+        <h1 class="post-title">
           <a href="/posts/my-first-post/">My first post! A writedown of how this page came to be.</a>
         </h1>
         <div class="post-meta">

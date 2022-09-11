@@ -6,7 +6,55 @@
     <description>Recent content on Tino Roivanen´s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Sep 2022 22:10:43 +0300</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Second Post</title>
+      <link>/posts/second-post/</link>
+      <pubDate>Sun, 11 Sep 2022 22:10:43 +0300</pubDate>
+      
+      <guid>/posts/second-post/</guid>
+      <description>Using a cloud service API for something meanful. This wasnt a big scale project by any means, but this is something that i found useful for myself. This project featured me using wttr.in to check the weather with a console orientated service. I configured it to print out the local weather for the 3 following days, at 4 diffrent times (Morning, Noon, Evening and Night)
+Usage is simple(ish):
+Use either curl, on linux based systems, or Invoke-RestMethod in PowerShell on windows as a base for all the commands.</description>
+      <content>&lt;h1 id=&#34;using-a-cloud-service-api-for-something-meanful&#34;&gt;Using a cloud service API for something meanful.&lt;/h1&gt;
+&lt;p&gt;This wasnt a big scale project by any means, but this is something that i found useful for myself. This project featured me
+using &lt;a href=&#34;https://github.com/chubin/wttr.in&#34;&gt;wttr.in&lt;/a&gt; to check the weather with a console orientated service. I configured it to print out the local weather for the 3 following days, at 4 diffrent times (Morning, Noon, Evening and Night)&lt;/p&gt;
+&lt;p&gt;Usage is simple(ish):&lt;/p&gt;
+&lt;p&gt;Use either curl, on linux based systems, or Invoke-RestMethod in PowerShell on windows as a base for all the commands.&lt;/p&gt;
+&lt;p&gt;Using&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;curl &lt;a href=&#34;https://wttr.in&#34;&gt;https://wttr.in&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Will print the data based on your IP-Adresses geolocational data.&lt;/p&gt;
+&lt;p&gt;But, what if you use a VPN for example, to mask your geolocational data?&lt;/p&gt;
+&lt;p&gt;Well, no problem. You can add the desired url to the end of your location. For example;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;curl &lt;a href=&#34;https://wttr.in/Helsinki&#34;&gt;https://wttr.in/Helsinki&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It also works on other location types, such as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;City Names&lt;/li&gt;
+&lt;li&gt;Airport Codes&lt;/li&gt;
+&lt;li&gt;Area Codes&lt;/li&gt;
+&lt;li&gt;GPS Coordinates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The returned calls are largely customizeable, with things such as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Weather Units&lt;/li&gt;
+&lt;li&gt;Diffrent output formats (print a .png file for example)&lt;/li&gt;
+&lt;li&gt;Print only one line of data&lt;/li&gt;
+&lt;li&gt;Data-rich output format (Seems to have an limited amount of api calls)&lt;/li&gt;
+&lt;li&gt;Moon phases and others, such as time of sunset and sunrise with a customizeable output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So for example: The custom Output i  made looks like this (I have scrapped the location, as this is going to be public on the internet afterall.);&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/ePd1nv0.png&#34; alt=&#34;The ready console print&#34;&gt;&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>The study diary!</title>
       <link>/studydiary/</link>
