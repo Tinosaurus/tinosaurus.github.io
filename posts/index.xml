@@ -8,16 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Sep 2022 22:10:43 +0300</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Second Post</title>
+      <title>Using a cloud service API for something meanful.</title>
       <link>/posts/second-post/</link>
       <pubDate>Sun, 11 Sep 2022 22:10:43 +0300</pubDate>
       
       <guid>/posts/second-post/</guid>
-      <description>Using a cloud service API for something meanful. This wasnt a big scale project by any means, but this is something that i found useful for myself. This project featured me using wttr.in to check the weather with a console orientated service. I configured it to print out the local weather for the 3 following days, at 4 diffrent times (Morning, Noon, Evening and Night)
+      <description>This wasnt a big scale project by any means, but this is something that i found useful for myself. This project featured me using wttr.in to check the weather with a console orientated service. I configured it to print out the local weather for the 3 following days, at 4 diffrent times (Morning, Noon, Evening and Night)
 Usage is simple(ish):
 Use either curl, on linux based systems, or Invoke-RestMethod in PowerShell on windows as a base for all the commands.</description>
-      <content>&lt;h1 id=&#34;using-a-cloud-service-api-for-something-meanful&#34;&gt;Using a cloud service API for something meanful.&lt;/h1&gt;
-&lt;p&gt;This wasnt a big scale project by any means, but this is something that i found useful for myself. This project featured me
+      <content>&lt;p&gt;This wasnt a big scale project by any means, but this is something that i found useful for myself. This project featured me
 using &lt;a href=&#34;https://github.com/chubin/wttr.in&#34;&gt;wttr.in&lt;/a&gt; to check the weather with a console orientated service. I configured it to print out the local weather for the 3 following days, at 4 diffrent times (Morning, Noon, Evening and Night)&lt;/p&gt;
 &lt;p&gt;Usage is simple(ish):&lt;/p&gt;
 &lt;p&gt;Use either curl, on linux based systems, or Invoke-RestMethod in PowerShell on windows as a base for all the commands.&lt;/p&gt;
