@@ -8,6 +8,154 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Sep 2022 22:10:43 +0300</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The study diary!</title>
+      <link>/studydiary/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/studydiary/</guid>
+      <description>Hi there! My name is Tino Roivanen, but online I like to go by multiple names, but most commonly Tinosaurus.
+If the person evaluating this has questions, you can reach me through my email at t1roti00@students.oamk.fi
+This is my study diary post for the Cloud Services Course, that I am taking in the University Of Applied Sciences in Oulu.
+Please note; The marked date is the date that the page was last updated on.</description>
+      <content>&lt;h1 id=&#34;hi-there&#34;&gt;Hi there!&lt;/h1&gt;
+&lt;p&gt;My name is Tino Roivanen, but online I like to go by multiple names, but most commonly Tinosaurus.&lt;/p&gt;
+&lt;p&gt;If the person evaluating this has questions, you can reach me through my email at &lt;a href=&#34;mailto:t1roti00@students.oamk.fi&#34;&gt;t1roti00@students.oamk.fi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is my study diary post for the Cloud Services Course, that I am taking in the University Of Applied Sciences in Oulu.&lt;/p&gt;
+&lt;h1 id=&#34;please-note-the-marked-date-is-the-date-that-the-page-was-last-updated-on&#34;&gt;Please note; The marked date is the date that the page was last updated on.&lt;/h1&gt;
+&lt;p&gt;This page will be updated on a weekly basis, answering the questions detailed on the course.
+By hosting this page on GitHub Pages, im sure this will be ample enough done for Free choice extra task bundle E.
+Link to a post detailing how the page is set up can be found &lt;a href=&#34;https://tinosaurus.github.io/posts/my-first-post/&#34;&gt;Here.&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;week-1&#34;&gt;Week 1;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Describe with short examples: SaaS, PaaS and IaaS&lt;/p&gt;
+&lt;p&gt;SaaS, Or software as a Service is a model for software licensing that is served on a subscription basis, and is hosted for example, in the cloud.
+These are usually accessed by a client, for example, web browser. A good example of these would be Dropbox, or other cloud storage services
+where you pay an X amount of money per month, to have access to their provided cloud storage.&lt;/p&gt;
+&lt;p&gt;PaaS, is Platform as a Service, where you buy a platform for creating software, instead of delivering the software itself online, like in SaaS. When you have the platform stored online
+there is no need to worry about things such as operating systems, updates to software, among others. An example of PaaS would be Heroku, as it allows you
+to deploy your application on their platform. But you do not own the infrastructure.&lt;/p&gt;
+&lt;p&gt;IaaS, or Infrastructure as a Service is similar to the two above, but it&amp;rsquo;s for infrastructure, such as servers. This is the most flexible computing model, but also most resource heavy.
+Examples of IaaS would be for example, Linode, Digitalocean, and many other hosting providers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;List and explain usual VPS advantages for small / start-up companies&lt;/p&gt;
+&lt;p&gt;VPS hosting´s advantages include but are not limited to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Affordable compared to dedicated hosting. Dedicated hosting is way more expensive than an VPS.&lt;/li&gt;
+&lt;li&gt;Enhanced security compared to shared hosting. It&amp;rsquo;s not as good as dedicated hosting, but it&amp;rsquo;s better than shared hosting.&lt;/li&gt;
+&lt;li&gt;Flexibility, for example scaling better to a larger capacity, if the need occurs.&lt;/li&gt;
+&lt;li&gt;Freedom, as in being able to run your own OS and software on the server, for example.&lt;/li&gt;
+&lt;li&gt;Resource consistency, as in the server not being shared with other people in shared hosting manner.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your thoughts about unexpected or hidden costs when using elastic cloud computing.&lt;/p&gt;
+&lt;p&gt;The fact that you have flexible costs is a good thing in my opinion, because it allows you to pay only what you use for. It is good if your access credentials are well secured with 2-factor authentication among other things.
+But if, for example your account gets breached, and your server starts gaining extra costs due to it being used unauthorized, using up more resources, or potentially having your data compromised, it will be an unpleasant surprise to
+the owner of the server, and the users whose data is stored on the server.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is &amp;ldquo;shadow IT&amp;rdquo; and why it is causing significant troubles for many organisations and enterprises? Especially cloud shadow IT.&lt;/p&gt;
+&lt;p&gt;Shadow IT is using systems, devices, software, etc. without explicit it-department approval. While shadow IT can improve productivity and innovate
+it also has its troubles. Those including but not being limited to: data leak, security risks, possibility of malware. For example, running an unknown
+piece of software could cause your infrastructure to be compromised. But on the other hand, not practicing shadow IT is restricting
+employee freedom, due to the IT team not being aware of every possible application to ever exist. It&amp;rsquo;s always a trade-off of security VS employee productivity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;week-2&#34;&gt;Week 2;&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://tinosaurus.github.io/posts/second-post/&#34;&gt;I also did build an autonomous Weather Post upon connecting to my raspberry pi, that i published a separate blog post of, to complete extra task bundle J, click here to access that blogpost.&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is &lt;em&gt;serverless architecture&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;It is a method of software designing that allows developers to build and run software without having to manage the infrastructure keeping it up. Developers can write and deploy code to any scale.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Describe shortly what is Kubernetes and what alternatives are there?&lt;/p&gt;
+&lt;p&gt;Kubernetes is a system for deployment, scaling, and management of application containers, also known as (CaaS) Container as a Service. Alternatives can include
+Azure Kubernetes Service, Google Cloud Run, AWS Fargate&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you would now use a virtualized Windows operating system in your laptop (whatever operating system the laptop already has): Which virtualization platform (VMware, Virtualbox, Hyper-V, KVM etc&amp;hellip;) would you use and why?&lt;/p&gt;
+&lt;p&gt;My choice would be Oracle VM VirtualBox, due to the fact that I have earlier experience with the software, so im already somewhat familiar with it, also it is the best option
+for my use needs, being able to use multiple operating systems as host (windows, mac &amp;amp; linux), ease of use and being free.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;List some benefits of IaC (Infrastructure as Code) for modern software development&lt;/p&gt;
+&lt;p&gt;Its less risky making your infrastructure as code than having one person do them by hand, as if that person leaves, they could take all the knowledge of the systems with them.
+Optimization also becomes very much easier when you can easier see what is causing troubles in your infrastructure, and you have better documentation with the code that has been developed by multiple people rather than
+having entire infrastructure managed by one person.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;week-3&#34;&gt;Week 3;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=4nKuK7Tp9KM&#34;&gt;This week I decided to do the task of setting up a web server with a dashboard to my raspberry pi. The video with some documentation can be seen by clicking here.&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Below is my Free choice extra task bundle A terms explained using a few sentences for each term.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bare metal server: A physical computer server that is used by a single customer only. Each server is a distinct physical piece of hardware that is a fully functional server on its own. Bare metal servers are dedicated entirely to the entity who is renting them.&lt;/li&gt;
+&lt;li&gt;Cloud Broker: A single point of entry to manage multiple cloud services. As cloud computing evolves, integration of cloud services might get too complex for consumers to manage alone, and that&amp;rsquo;s where Cloud Brokers are meant to help.&lt;/li&gt;
+&lt;li&gt;Microservices: An application built as a collection of smaller services. This architecture enables rapid, frequent and reliable delivery of large and complex applications, and enables the technology stack to be evolved more easily.&lt;/li&gt;
+&lt;li&gt;Elastic computing: Ability to scale the usage of resources (ex. cpu/memory/ram/storage/bandwidth) up and down to adapt to changing resource demands and meeting workload requirements dynamically.&lt;/li&gt;
+&lt;li&gt;Cloud Federation: Deployment of both external and internal services to match business needs. Integrating private, community, and public clouds into scalable computing platforms.&lt;/li&gt;
+&lt;li&gt;AWS Lambda: Serverless compute service that lets you run code for any type of application and/or backend service without managing or provisioning servers. Operates on a pay for what you use basis.&lt;/li&gt;
+&lt;li&gt;FaaS: FaaS, also known as Function as Service, provides a platform to develop run and manage applications and their functionalities without building and maintaining the infrastructure typically associated with it. Building an app with this model is considered a way of &amp;ldquo;Serverless Architecture&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;DaaS: DaaS, also known as Desktop as a Service, is a computing offering where a service provides virtual desktops to end users over the internet, usually licensed with a per-user subscription format. These can be persistent desktops, ones that stay the same. Or non-persistent ones, that get wiped after every logout.&lt;/li&gt;
+&lt;li&gt;SSO: SSO, also known as Single sign-on is an authentication method that allows a user to log in to several related, yet independent software systems with a single ID. This is used in for example, school networks. Where the same login will give you access to Wi-Fi, your courses, etc etc.&lt;/li&gt;
+&lt;li&gt;Managed DNS: Managed DNS is a model of DNS where customer utilizes a DNS Server hosted by a service provider to store their DNS records and enables internet access with a domain name instead of just directly inserting an ip address.&lt;/li&gt;
+&lt;li&gt;Origin Server: A computer running programs designed to listen and to respond to incoming requests and / or traffic.&lt;/li&gt;
+&lt;li&gt;Google Firebase: A platform developed by google for mobile and web application creation. Useful for building apps, releasing and monitoring them, and monitoring user engagement within the app.&lt;/li&gt;
+&lt;li&gt;LAMP:One of the most common software stacks of Linux, Apache, MySQL, and PHP/Perl/Python. It can also be used to refer a generic software stack model and its components can be changed.&lt;/li&gt;
+&lt;li&gt;Mashup Service: A mashup is a webpage or an application that uses content from more than one source to create a single new service, basically combining multiple services together.&lt;/li&gt;
+&lt;li&gt;Middleware: Middleware is described as &amp;ldquo;software glue&amp;rdquo;, being a software that provides services to software application beyond those available straight from the operating system.&lt;/li&gt;
+&lt;li&gt;Ubiquitous Computing: A concept in software engineering, hardware and computer science where computing is made to appear anytime and everywhere. It&amp;rsquo;s the concept of using small internet connected and inexpensive computers to help with everyday functions.&lt;/li&gt;
+&lt;li&gt;SLA: SLA also known as Service-level agreement is a commitment between a service provider and a client. Aspects of the commitment (ex. quality, availability, etc.) are agreed between the provider and the user.&lt;/li&gt;
+&lt;li&gt;TCO:TCO, an acronym for Total cost of ownership, is a financial estimate intended to help buyers and owners determine the direct and also indirect costs of a product and / or service.&lt;/li&gt;
+&lt;li&gt;Vendor Lock-in: The act of making customer dependent on a certain vendor for products, unable to use another vendors without substantial switching costs. For example: proprietary connectors are a method of vendor lock-in.&lt;/li&gt;
+&lt;li&gt;Utility Computing: A service provisioning model where a service provider makes resources and infrastructure management available as needed and charges for specific usage rather than a flat rate.&lt;/li&gt;
+&lt;li&gt;Fog Computing(Fogging): An architecture that has edge devices carrying out a substantial amount of computation storage and communication locally and routed over the internet.&lt;/li&gt;
+&lt;li&gt;Network Slicing: Overlaying multiple virtual networks on top of a shared network domain. Often used in 5G networks as a fundamental capability.&lt;/li&gt;
+&lt;li&gt;Websocket: A communications protocol providing communication channels over a single TCP connection. Enables interaction between a client application and a server with lower overhead than alternatives such as HTTP polling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;week-4&#34;&gt;Week 4&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Below is my answers for the week 4 questions, and the extra task bundle B.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you could change one of your home or work appliances/devices to an internet connected device, what would it be? Which cloud IoT services would you like to use for it (and why)?&lt;/p&gt;
+&lt;p&gt;I would pick my lights. Because if I forget them on, I could turn them off when im not home from an app on my phone for example.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Estimate how much would it cost to run your own gaming PC instance in the Azure cloud as DaaS/VDI&lt;/p&gt;
+&lt;p&gt;Based on an VM in South Sweden, with 8 cores, 16gb ram, 80gb of temporary storage, and accounting for an 2048GiB HDD, and 2tb of outbound data transfer, the monthly cost would be 890.20€, this is probably way overkill, as this is set for 24/7 operation for the entire month.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your thoughts or examples of cloud based on-demand gaming and streaming&lt;/p&gt;
+&lt;p&gt;This can be a good thing, for example for people with a high bandwidth speed, and lower end devices. These cloud services also tend to have bigger libraries, and paying a monthly fee for a larger library might seem as a compelling business model for some users.
+But for people with slower bandwidth speeds, or people with already a functioning gaming pc, this will not seem as useful. Overall, cloud gaming DOES have a valid reason for its share in the market.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Search and describe examples of CAP theorem in cloud services context&lt;/p&gt;
+&lt;p&gt;CAP theorem is the theory that any data storage can provide only two of the following three guarantees:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Consistency&lt;/li&gt;
+&lt;li&gt;Availability&lt;/li&gt;
+&lt;li&gt;Partition tolerance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When a network failure happens it must be decided whether to cancel the active transfer and thus decrease the availability to ensure consistency, or to
+proceed with the operation, and be more available but risk inconsistency.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Listed below there are answers for my free choice extra task bundle B&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What to consider and compare when choosing a VPS server provider and VPS server features: What are your special needs, for example. RAM, Storage, Fast storage, What will you use it for, and the location of the server.&lt;/li&gt;
+&lt;li&gt;The benefits, risks and challenges of hybrid cloud computing: Splitting your computing resources for cost efficiency, having improved security (multiple logins needed for separate services), better accessibility and flexibility if you need to increase resources. The biggest risks and challenges being The tools and skills required, the data and application integration issues, and networking, and the downsides of splitting your resources.&lt;/li&gt;
+&lt;li&gt;Why HTTP/2 (and HTTP/3) will/may speed up many web based cloud services? What is the current HTTP/2 adaptation rate now?: The Main advantages of HTTP/3 is increased performance compared to HTTP/2, supporting newer technologies, and therefore having better security. HTTP/2 is being used on around 45% of all websites as of beginning of September 2022.&lt;/li&gt;
+&lt;li&gt;What is (5G) mobile edge computing? How it may change IoT and mobile device use?: Mobile edge computing is having computing, storage, and networking resources be integrated with the base stations. Mobile edge computing will be effecting latency, bandwidth, and the agility of connecting high amounts of devices to networks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</content>
+    </item>
+    
+    <item>
       <title>Using a cloud service API for something meanful.</title>
       <link>/posts/second-post/</link>
       <pubDate>Sun, 11 Sep 2022 22:10:43 +0300</pubDate>
