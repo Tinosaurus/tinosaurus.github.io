@@ -10,7 +10,7 @@
     <item>
       <title>The study diary!</title>
       <link>/studydiary/</link>
-      <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>/studydiary/</guid>
       <description>Hi there! My name is Tino Roivanen, but online I like to go by multiple names, but most commonly Tinosaurus.
@@ -61,16 +61,21 @@ it also has its troubles. Those including but not being limited to: data leak, s
 piece of software could cause your infrastructure to be compromised. But on the other hand, not practicing shadow IT is restricting
 employee freedom, due to the IT team not being aware of every possible application to ever exist. It&amp;rsquo;s always a trade-off of security VS employee productivity.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;week-2-and-task-bundle-j&#34;&gt;Week 2 (And Task Bundle J);&lt;/h1&gt;
+&lt;h1 id=&#34;week-2&#34;&gt;Week 2;&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://tinosaurus.github.io/posts/second-post/&#34;&gt;I also did build an autonomous Weather Post upon connecting to my raspberry pi, that i published a separate blog post of, to complete extra task bundle J, click here to access that blogpost.&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;What is &lt;em&gt;serverless architecture&lt;/em&gt;?&lt;/p&gt;
-&lt;p&gt;It is a method of software designing that allows developers to build and run software without having to manage the infrastructure keeping it up. Developers can write and deploy code to any scale.&lt;/p&gt;
+&lt;p&gt;It is a method of software designing that allows developers to build, deploy and run applications without having to manage the servers themselves. Once a serverless application is deployed, it will respond to traffic and
+scale accordingly. There can be a compute platform for just the code, data storage for data storage / retrieval, messaging services for moving the data from place A to place B etc. All of this with no management overhead and paying for only what you use.
+For example, a REST API can be a serverless solution. For example; having AWS as your vendor, youd have an API gateway for HTTP requests, Lambda functions that receive requests and execute them, and having DynamoDB or some other database for data storage and retrieval.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Describe shortly what is Kubernetes and what alternatives are there?&lt;/p&gt;
-&lt;p&gt;Kubernetes is a system for deployment, scaling, and management of application containers, also known as (CaaS) Container as a Service. Alternatives can include
-Azure Kubernetes Service, Google Cloud Run, AWS Fargate&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Kubernetes is a system for deployment, scaling, and management of application containers, also known as (CaaS) Container as a Service.
+Kubernetes is good for managing and monitoring several simultaneously running containers, and kubernetes doesnt limit what type of application you have.
+If you have a application that run in an container, Kubernetes can run it aswell. Kubernetes is also very portable, and scaleable for bigger applications,
+but it can easily be overkill for smaller deployments.
+Alternatives can include Azure Kubernetes Service, Google Cloud Run, AWS Fargate&amp;hellip;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you would now use a virtualized Windows operating system in your laptop (whatever operating system the laptop already has): Which virtualization platform (VMware, Virtualbox, Hyper-V, KVM etc&amp;hellip;) would you use and why?&lt;/p&gt;
@@ -83,9 +88,28 @@ for my use needs, being able to use multiple operating systems as host (windows,
 Optimization also becomes very much easier when you can easier see what is causing troubles in your infrastructure, and you have better documentation with the code that has been developed by multiple people rather than
 having entire infrastructure managed by one person.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;week-3-and-task-bundle-a&#34;&gt;Week 3 (And Task Bundle A);&lt;/h1&gt;
+&lt;h1 id=&#34;week-3&#34;&gt;Week 3;&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=4nKuK7Tp9KM&#34;&gt;This week I decided to do the task of setting up a web server with a dashboard to my raspberry pi. The video with some documentation can be seen by clicking here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Describe reasons why so many (most?) companies are using cloud based email and calendar services&lt;/p&gt;
+&lt;p&gt;The reasons i can think of for this at least are improved security (having your confidential emails, and scheduled meetings and information about them in an highly protected location, off site), cloud based providers (ex. Microsoft, Google) have way higher amounts of resources to allocate to said services, theyre easier to access remotely from what device the employees want to, and from where they want to.
+It also is a major simplification of administration, as the biggest back-end changes are not yours to worry of. And by relying on a cloud based provider for things such a redundancy, youll get higher uptime, and more backups across multiple diffrent locations.
+Also if you have to increase or decrease your user counts, you have the increased scalability from a cloud-based solution at your disposal.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;List and explain some pros and cons (for example CDN challenges) of public DNS resolvers (Google&amp;rsquo;s 8.8.8.8, Cloudflare&amp;rsquo;s 1.1.1.1 etc.) vs common home networking, where end users are using ISP&amp;rsquo;s DNS resolvers?&lt;/p&gt;
+&lt;p&gt;Public DNS can be notably more secure, for example keeping a No Logs policy (ex. 1.1.1.1 has logs for 24 hours, and afterwards they are purged.), or for example minimizing the data sent to servers to improve privacy.
+As for cons, the biggest challenge being that CDN´s usually will not pick up your location that well when using a public DNS, they will think that you are in the vicinity of the
+DNS server that you are using instead of locating your ISP´s DNS.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Describe reasons, why many IoT devices (internet connected home appliances, Smart-TVs and such) are using Google&amp;rsquo;s 8.8.8.8 or some other public DNS resolvers?&lt;/p&gt;
+&lt;p&gt;They can be faster than your Local ISP´s DNS services, and they can also be more secure (see the mention of no logs from previous answer.) Also the fact that most IoT devices are not patchable by end user. While IoT (and every single other device for that matter) will always have vulnerabilities, by incorporating a DNS based solution, will help with threats such as DNS Cache Poisoning.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your thoughts about when to maintain your own web server and when to use SaaS/PaaS/IaaS to provide web services?&lt;/p&gt;
+&lt;p&gt;In my opinion, using your own webserver is not a bad idea for a smaller scale hobbyist project (For example, Raspberry PI´s are very great and power efficient servers for smaller server needs.) And of course, i wouldnt personally
+host any larger or critical infrastructure on an self hosted webserver. But for smaller hobbyist projects, these work very well, as they can be very inexpensive and power efficient, and your home connection will be enough to host these services.
+When the computational resources required starts to add up, or when the availability of service becomes more critical, id look into SaaS/PaaS/IaaS&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Below is my Free choice extra task bundle A terms explained using a few sentences for each term.&lt;/p&gt;
@@ -115,7 +139,7 @@ having entire infrastructure managed by one person.&lt;/p&gt;
 &lt;li&gt;Websocket: A communications protocol providing communication channels over a single TCP connection. Enables interaction between a client application and a server with lower overhead than alternatives such as HTTP polling.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;week-4-and-extra-task-bundle-b&#34;&gt;Week 4 (And Extra Task Bundle B)&lt;/h1&gt;
+&lt;h1 id=&#34;week-4&#34;&gt;Week 4&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Below is my answers for the week 4 questions, and the extra task bundle B.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -144,44 +168,51 @@ But for people with slower bandwidth speeds, or people with already a functionin
 proceed with the operation, and be more available but risk inconsistency.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Listed below are the answers for my free choice extra task bundle B&lt;/p&gt;
+&lt;p&gt;Listed below there are answers for my free choice extra task bundle B&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;What to consider and compare when choosing a VPS server provider and VPS server features:&lt;/p&gt;
-&lt;p&gt;What are your special needs, for example. RAM, Storage, Fast storage, What will you use it for, and the location of the server.&lt;/p&gt;
+&lt;p&gt;What are your special needs, for example. RAM, Storage, Fast storage, What will you use it for, and the location of the server.
+Other highly suggested factors to think of can be but are not limited to; Uptime (A good measurement for the reliability of your hosting provider), How are their backups handled, what kind of network connections they offer, what security features they do have in use,&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The benefits, risks and challenges of hybrid cloud computing:&lt;/p&gt;
-&lt;p&gt;Splitting your computing resources for cost efficiency, having improved security (multiple logins needed for separate services), better accessibility and flexibility if you need to increase resources. The biggest risks and challenges being The tools and skills required, the data and application integration issues, and networking, and the downsides of splitting your resources.&lt;/p&gt;
+&lt;p&gt;The benefits, risks and challenges of hybrid cloud computing.&lt;/p&gt;
+&lt;p&gt;Starting with the benefits, hybrid cloud gives you better and more robust security options for data with increased security needs,
+more control over your data, and clear separation of private and public cloud services. Hybrid Cloud helps you also have better network management by locating data closer to the user of the data.&lt;/p&gt;
+&lt;p&gt;The biggest cons/risks/challenges for cloud computing are the complexity of hybrid cloud. Current IT solutions need to be positioned correctly for the present and the future.
+Budget can be also a big factor, because of other urgent business needs. And by increasing the complexity of your IT solution, there will be an increased risk of security attacks towards your IT solution.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Why HTTP/2 (and HTTP/3) will/may speed up many web based cloud services? What is the current HTTP/2 adaptation rate now?:&lt;/p&gt;
-&lt;p&gt;The Main advantages of HTTP/3 is increased performance compared to HTTP/2, supporting newer technologies, and therefore having better security. HTTP/2 is being used on around 45% of all websites as of beginning of September 2022.&lt;/p&gt;
+&lt;p&gt;Why HTTP/2 (and HTTP/3) will/may speed-up many web based cloud services? What is the current HTTP/2 adaptation rate now?&lt;/p&gt;
+&lt;p&gt;HTTP/2 is faster than its predecessors by using a single connection to transmit everything, it prioritizes things for more efficiency, and its more secure as its not in plaintext, it reduces load times by an considerable amount, and it is more compatible than previous versions.
+HTTP/3 on the other hand is being worked on, considered relatively mature, but its still safe to say it still is in an experimental state. This can be mostly reflected by the fact that the amount of requests that use HTTP/3 is less than 2%, compared to HTTP/2&amp;rsquo;s 64 - 66 % (depending on desktop or mobile.)
+Biggest features of HTTP/3 will be faster initial setups on connections, and better flexibility, and better reliability with spotty connections (ex. variable amounts of packet loss)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;What is (5G) mobile edge computing? How it may change IoT and mobile device use?:&lt;/p&gt;
-&lt;p&gt;Mobile edge computing is having computing, storage, and networking resources be integrated with the base stations. Mobile edge computing will be effecting latency, bandwidth, and the agility of connecting high amounts of devices to networks.&lt;/p&gt;
+&lt;p&gt;What is (5G) mobile edge computing? How it may change IoT and mobile device use?&lt;/p&gt;
+&lt;p&gt;Edge computing takes place at or near users physical location. By placing the computational services closer to the users physical location, users benefit from faster and more reliable services
+while companies benefit from being able to support latency-sensitive applications better. The biggest diffrence to IoT is that edge devices are phsyical hardware in remote locations, to collect, process and execute upon it.
+IoT devices on the other hand, are the source of said data. Edge devices can be considered IoT if they have enough storage and compute to make low latency decisions and processing of said data.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;week-5&#34;&gt;Week 5&lt;/h1&gt;
+&lt;p&gt;Week 5&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Describe pros and cons of cloud WAF´S&lt;/p&gt;
-&lt;p&gt;A Web Application Firewall acts as a firewall between a web application and the internet. These can be used to protect
-a web application from malicious content such as sql injections, cross site scripting (xss) and many others.
-WAF&amp;rsquo;S biggest pros are the safety they provide, at a minimal upfront cost. The biggest con is that you
-hand over the responsibility of organizing it to a third party.&lt;/p&gt;
+&lt;p&gt;A Web Application Firewall acts as a firewall between a web application and the internet. These can be used to protect a web application from malicious content such as sql injections, cross site scripting (xss) and many others. WAF’S biggest pros are the safety they provide, at a minimal upfront cost. The biggest con is that you hand over the responsibility of organizing it to a third party.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;List and describe (with tiny examples) some commonly used data formatting standards, markup languages and syntaxes used to store or request data via cloud service APIs.&lt;/p&gt;
 &lt;p&gt;Commonly used data formatting standards are for example Extensive Markup Language (XML), that was designed as a self-descriptive markup language to store and transport data,&lt;/p&gt;
-&lt;p&gt;JavaScript Object Notation (JSON), Javascript based data-interchange format, and can be language independent.&lt;/p&gt;
+&lt;p&gt;JavaScript Object Notation (JSON), Javascript based data-interchange format, and can be language independent.&amp;gt;&lt;/p&gt;
 &lt;p&gt;Comma Stored Value(CSV) is a file format used to save table based data, such as Excel spreadsheets, that can be used to move big amounts of data.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;List and describe shortly different open source or commercial internet networking (peer-to-peer) solutions where multiple hosts can share the host network connection(s) and other resources&lt;/p&gt;
-&lt;p&gt;For example, Windows Update (in Windows 10 at least) can be delivered with a Peer-to-peer connection based network. Biggest examples of peer-to-peer data transfer might be torrent sharing, (NOTE; Actual usage of torrent networks is legal, it is just the copyrighted content that is not legal.)
-And even some communication networks are built on peer-to-peer technology, such as Session, Tox, or Orbit.&lt;/p&gt;
+&lt;p&gt;For example, Windows Update (in Windows 10 at least) can be delivered with a Peer-to-peer connection based network. Biggest examples of peer-to-peer data transfer might be torrent sharing, (NOTE; Actual usage of torrent networks is legal, it is just the copyrighted content that is not legal.) And even some communication networks are built on peer-to-peer technology, such as Session, Tox, or Orbit.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Your startup company has developed a popular Android application and offers web based OAuth/SAML via 3rd party auth provider and locally generated user accounts (local accounts are in your own VPS) - Explain some pros and cons of both methods&lt;/p&gt;
-&lt;p&gt;Well, to start the pro&amp;rsquo;s of the OAuth based solution is that the implementation is less expensive for this solution, and it is communicating to an external backend, (google,facebook etc..) and the fact that if your frontend gets compromised, your backend security is fine. With the biggest con being that you have to trust your userdata to a third party.&lt;/p&gt;
+&lt;p&gt;Well, to start the pro’s of the OAuth based solution is that the implementation is less expensive for this solution, and it is communicating to an external backend, (google,facebook etc..) and the fact that if your frontend gets compromised, your backend security is fine. With the biggest con being that you have to trust your userdata to a third party.&lt;/p&gt;
 &lt;p&gt;On local accounts, you have control of all data, but all the security, upkeeping costs, and if your frontend is compromised, they might also recieve access to your backend services as well.&lt;/p&gt;
 &lt;p&gt;As a final conclusion, both have their Pro´s and Con´s, BUT if executed well, both can be good to use as the login method.&lt;/p&gt;
 &lt;/blockquote&gt;
