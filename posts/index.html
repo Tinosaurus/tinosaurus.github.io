@@ -138,6 +138,87 @@
     
       <div class="post on-list">
         <h1 class="post-title">
+          <a href="/posts/nowplayinginshell/">Using Musicbee, Oh My Posh, and windows included tools to show current playing song in shell (atleast somewhat) efficiently.</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2023-01-23
+          </span>
+          
+            <span class="post-author">:: Tino Roivanen</span>
+          
+        </div>
+
+        
+
+        
+
+
+      
+        <div class="post-content">
+          
+            <h1 id="disclaimer-this-might-not-be-the-most-efficient-method-of-doing-this-but-this-is-what-i-managed-to-do-and-it-works-mostly-this-will-also-work-with-other-music-players-that-have-the-capability-of-outputting-the-song-metadata-in-wanted-format">Disclaimer: This might not be the most efficient method of doing this. But this is what I managed to do. And it works. Mostly. This will also work with other music players that have the capability of outputting the song metadata in wanted format.</h1>
+<p><a href="https://ohmyposh.dev/">Oh My Posh</a> is a theme engine for shell windows. It supports shells such as powershell, cmd (Not fully native, with Clink.), bash and many others.</p>
+<p>I found a prompt theme that I liked. But I wanted it to show my currently playing song. After checking the pre-listed segments from their site. Spotify, and Youtube Music (Desktop App) seemed to be supported out of the box.
+Musicbee and a lot of others were not. Oh well, time to start tinkering.</p>
+<p>I headed over to the Command segment to check out how would i be able to run a custom shell command. Then when i opened the segment, i was greeted with an immediate warning about using commands on powershell.</p>
+<blockquote>
+<p>While powerful, it tends to take a lot of time executing the command on PowerShell. Even with –noprofile it&rsquo;s noticeably slower compared to sh. It&rsquo;s advised to look at using environment variables when using PowerShell.</p>
+</blockquote>
+<p>Oh, well. After promptly ignoring this, because i wanted to try things my way first, googling how to input text file contents into powershell and just trying to get-content (or gc for short.) the txt file, it didnt work. (Or at least, I did not bother trying to troubleshoot it.)</p>
+<h1 id="next-up-actually-trying-the-environmental-variables-like-it-was-suggested">Next up: Actually trying the environmental variables like it was suggested.</h1>
+<p>I promptly created an environmental variable named NowPlaying, and tried outputting it using  .Env.NowPlaying as the template. Perfect. It prints the hello world, that i had set in. But now.. How to make the env read from a file..</p>
+<p>With updates..</p>
+<p>After some time thinking about it&hellip; I realize again that get-content exists.</p>
+<p>I put Get-Content &hellip;\CurrentSong.txt as the env, And realize that it just prints out the said command.</p>
+<p>Then i google how to set and environmental variable according to txt file contents, And then i find it. Merging Get-Content with SetX.</p>
+<p>So i type out this powershell script:</p>
+<blockquote>
+<p>Get-Content &hellip;\Tags.txt | Foreach-Object {SETX NowPlaying $_}</p>
+</blockquote>
+<p>I run the script. And to my enjoyment, It works. The environmental variable that I set is now the song name I had playing. I skip over excitedly to the next song, look at the env again after confirming that
+the txt file contents had indeed changed, Not updated. Here is the part where I realize that im going to need to automate this.</p>
+<p>Here is where i would like to thank whoever who originally created Task Scheduler for windows. This thing made it all possible.</p>
+<p>To spare you most of the pain, im just going to list the task settings below.</p>
+<p>Name the task however you want.
+Set it to Run whether user is logged on or not.
+Make it run with highest privileges.
+Set it to Trigger one time, On a schedule, at X time.
+Repeat task every 1 minute, for a duration Indefinitely.
+Make sure that the task does <strong>NOT</strong> stop  if it runs longer than X amount of time.
+Also make sure it does not expire.
+The action you want, is to start a program, namely powershell.
+In arguments, type:</p>
+<blockquote>
+<p>-WindowStyle hidden -File File\Path\Here\ScriptName.PS1.</p>
+</blockquote>
+<p>WindowStyle hidden is used to run the command stealthily, so that you wont have a powershell window popping up every minute.</p>
+<p>In settings;
+Task can be ran on demand.
+Set it to run as soon as possible after a scheduled start is missed.</p>
+<p>Now start it once, and let it run in the background. It will automatically update the Env value.</p>
+<p>Need it more often than once a minute?</p>
+<p>Setup duplicates to run at diffrent times.</p>
+<p>For example:</p>
+<p>Duplicate 1 runs at every minute on the dot.</p>
+<p>Duplicate 2 runs at 10 seconds after every minute.
+etc etc.</p>
+<blockquote>
+<p>End result looks.. Something like this.
+<img src="https://i.imgur.com/U5YPeAP.png" alt="The ready console print"></p>
+</blockquote>
+<p>The one bug that this has that bothers me.. Is this. When you hit enter again to refresh the prompt, it wont auto update. It will only update on fresh opens of your terminal of choice.
+This might be an issue with <a href="https://ohmyposh.dev/">Oh My Posh</a> or it might be an configuration issue, that im not aware of yet. Ill update this if i find a fix.</p>
+<p><img src="https://i.imgur.com/9rZsAqI.png" alt="The broken console print"></p>
+
+          
+        </div>
+
+        
+      </div>
+    
+      <div class="post on-list">
+        <h1 class="post-title">
           <a href="/posts/second-post/">Using a cloud service API for something meanful.</a>
         </h1>
         <div class="post-meta">
@@ -279,7 +360,7 @@ but theres also more color options.</p>
   <div class="footer__inner">
     
       <div class="copyright">
-        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
+        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
     
         <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>

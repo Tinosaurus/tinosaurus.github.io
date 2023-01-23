@@ -6,7 +6,70 @@
     <description>Recent content in Posts on Tino Roivanen´s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Sep 2022 22:10:43 +0300</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jan 2023 14:19:51 +0200</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Musicbee, Oh My Posh, and windows included tools to show current playing song in shell (atleast somewhat) efficiently.</title>
+      <link>/posts/nowplayinginshell/</link>
+      <pubDate>Mon, 23 Jan 2023 14:19:51 +0200</pubDate>
+      
+      <guid>/posts/nowplayinginshell/</guid>
+      <description>Disclaimer: This might not be the most efficient method of doing this. But this is what I managed to do. And it works. Mostly. This will also work with other music players that have the capability of outputting the song metadata in wanted format. Oh My Posh is a theme engine for shell windows. It supports shells such as powershell, cmd (Not fully native, with Clink.), bash and many others.</description>
+      <content>&lt;h1 id=&#34;disclaimer-this-might-not-be-the-most-efficient-method-of-doing-this-but-this-is-what-i-managed-to-do-and-it-works-mostly-this-will-also-work-with-other-music-players-that-have-the-capability-of-outputting-the-song-metadata-in-wanted-format&#34;&gt;Disclaimer: This might not be the most efficient method of doing this. But this is what I managed to do. And it works. Mostly. This will also work with other music players that have the capability of outputting the song metadata in wanted format.&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://ohmyposh.dev/&#34;&gt;Oh My Posh&lt;/a&gt; is a theme engine for shell windows. It supports shells such as powershell, cmd (Not fully native, with Clink.), bash and many others.&lt;/p&gt;
+&lt;p&gt;I found a prompt theme that I liked. But I wanted it to show my currently playing song. After checking the pre-listed segments from their site. Spotify, and Youtube Music (Desktop App) seemed to be supported out of the box.
+Musicbee and a lot of others were not. Oh well, time to start tinkering.&lt;/p&gt;
+&lt;p&gt;I headed over to the Command segment to check out how would i be able to run a custom shell command. Then when i opened the segment, i was greeted with an immediate warning about using commands on powershell.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While powerful, it tends to take a lot of time executing the command on PowerShell. Even with –noprofile it&amp;rsquo;s noticeably slower compared to sh. It&amp;rsquo;s advised to look at using environment variables when using PowerShell.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Oh, well. After promptly ignoring this, because i wanted to try things my way first, googling how to input text file contents into powershell and just trying to get-content (or gc for short.) the txt file, it didnt work. (Or at least, I did not bother trying to troubleshoot it.)&lt;/p&gt;
+&lt;h1 id=&#34;next-up-actually-trying-the-environmental-variables-like-it-was-suggested&#34;&gt;Next up: Actually trying the environmental variables like it was suggested.&lt;/h1&gt;
+&lt;p&gt;I promptly created an environmental variable named NowPlaying, and tried outputting it using  .Env.NowPlaying as the template. Perfect. It prints the hello world, that i had set in. But now.. How to make the env read from a file..&lt;/p&gt;
+&lt;p&gt;With updates..&lt;/p&gt;
+&lt;p&gt;After some time thinking about it&amp;hellip; I realize again that get-content exists.&lt;/p&gt;
+&lt;p&gt;I put Get-Content &amp;hellip;\CurrentSong.txt as the env, And realize that it just prints out the said command.&lt;/p&gt;
+&lt;p&gt;Then i google how to set and environmental variable according to txt file contents, And then i find it. Merging Get-Content with SetX.&lt;/p&gt;
+&lt;p&gt;So i type out this powershell script:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Get-Content &amp;hellip;\Tags.txt | Foreach-Object {SETX NowPlaying $_}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I run the script. And to my enjoyment, It works. The environmental variable that I set is now the song name I had playing. I skip over excitedly to the next song, look at the env again after confirming that
+the txt file contents had indeed changed, Not updated. Here is the part where I realize that im going to need to automate this.&lt;/p&gt;
+&lt;p&gt;Here is where i would like to thank whoever who originally created Task Scheduler for windows. This thing made it all possible.&lt;/p&gt;
+&lt;p&gt;To spare you most of the pain, im just going to list the task settings below.&lt;/p&gt;
+&lt;p&gt;Name the task however you want.
+Set it to Run whether user is logged on or not.
+Make it run with highest privileges.
+Set it to Trigger one time, On a schedule, at X time.
+Repeat task every 1 minute, for a duration Indefinitely.
+Make sure that the task does &lt;strong&gt;NOT&lt;/strong&gt; stop  if it runs longer than X amount of time.
+Also make sure it does not expire.
+The action you want, is to start a program, namely powershell.
+In arguments, type:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;-WindowStyle hidden -File File\Path\Here\ScriptName.PS1.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;WindowStyle hidden is used to run the command stealthily, so that you wont have a powershell window popping up every minute.&lt;/p&gt;
+&lt;p&gt;In settings;
+Task can be ran on demand.
+Set it to run as soon as possible after a scheduled start is missed.&lt;/p&gt;
+&lt;p&gt;Now start it once, and let it run in the background. It will automatically update the Env value.&lt;/p&gt;
+&lt;p&gt;Need it more often than once a minute?&lt;/p&gt;
+&lt;p&gt;Setup duplicates to run at diffrent times.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;p&gt;Duplicate 1 runs at every minute on the dot.&lt;/p&gt;
+&lt;p&gt;Duplicate 2 runs at 10 seconds after every minute.
+etc etc.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;End result looks.. Something like this.
+&lt;img src=&#34;https://i.imgur.com/U5YPeAP.png&#34; alt=&#34;The ready console print&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The one bug that this has that bothers me.. Is this. When you hit enter again to refresh the prompt, it wont auto update. It will only update on fresh opens of your terminal of choice.
+This might be an issue with &lt;a href=&#34;https://ohmyposh.dev/&#34;&gt;Oh My Posh&lt;/a&gt; or it might be an configuration issue, that im not aware of yet. Ill update this if i find a fix.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/9rZsAqI.png&#34; alt=&#34;The broken console print&#34;&gt;&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Using a cloud service API for something meanful.</title>
       <link>/posts/second-post/</link>
